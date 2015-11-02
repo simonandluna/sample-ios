@@ -3,15 +3,51 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController"/>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uIq-9I-FE1"/>
+                        <viewControllerLayoutGuide type="bottom" id="vBR-gy-0DB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sp1-dl-swA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2015 FoodTracker Inc. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="xz2-Z3-NM8">
+                                <rect key="frame" x="20" y="559" width="560" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="43" text="FoodTracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="Qe5-04-7qs">
+                                <rect key="frame" x="20" y="160" width="560" height="43"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Qe5-04-7qs" firstAttribute="trailing" secondItem="sp1-dl-swA" secondAttribute="trailingMargin" id="G2S-BQ-ZIf"/>
+                            <constraint firstItem="Qe5-04-7qs" firstAttribute="top" secondItem="sp1-dl-swA" secondAttribute="topMargin" constant="160" id="Ixl-yq-cAm"/>
+                            <constraint firstItem="vBR-gy-0DB" firstAttribute="top" secondItem="xz2-Z3-NM8" secondAttribute="bottom" constant="20" id="eAt-TS-j4F"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xz2-Z3-NM8" secondAttribute="trailing" id="ipj-Ow-U4Y"/>
+                            <constraint firstItem="Qe5-04-7qs" firstAttribute="leading" secondItem="sp1-dl-swA" secondAttribute="leadingMargin" id="mjC-0k-xOq"/>
+                            <constraint firstItem="xz2-Z3-NM8" firstAttribute="leading" secondItem="sp1-dl-swA" secondAttribute="leadingMargin" id="teD-zr-FIQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="54" y="274"/>
         </scene>
     </scenes>
 </document>
